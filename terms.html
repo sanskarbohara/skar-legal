@@ -1,106 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skar — Terms of Service</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #0a0a12;
-      color: #8B8B94;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 15px;
-      line-height: 1.7;
-      padding: 48px 24px;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    .logo { color: #F5F5F7; font-size: 22px; font-weight: 800; letter-spacing: 4px; margin-bottom: 8px; }
-    .tagline { color: #444; font-size: 13px; margin-bottom: 48px; }
-    h1 { color: #F5F5F7; font-size: 28px; font-weight: 800; margin-bottom: 8px; }
-    .updated { color: #555; font-size: 13px; margin-bottom: 32px; }
-    h2 { color: #F5F5F7; font-size: 17px; font-weight: 700; margin-top: 36px; margin-bottom: 8px; }
-    p { margin-bottom: 14px; }
-    a { color: #7C6AF7; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .divider { height: 1px; background: #1a1a1a; margin: 32px 0; }
-    .footer { color: #333; font-size: 12px; margin-top: 48px; text-align: center; }
-    .highlight-box {
-      background: #111;
-      border: 1px solid #7C6AF730;
-      border-radius: 12px;
-      padding: 20px 24px;
-      margin: 20px 0;
-    }
-    .highlight-box h3 { color: #7C6AF7; font-size: 14px; font-weight: 600; margin-bottom: 10px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skar — Terms of Service</title>
+<meta name="description" content="Terms of Service for the Skar app. Fair rules, plain language, no gotchas.">
+<link rel="icon" href="https://sanskarbohara.github.io/skar-legal/Skar%20Logo%20without%20text.png">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#040408;color:#ccc8e0;font-family:'Inter',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;min-height:100vh}
+::selection{background:#7c5cf6;color:#040408}
+a{color:inherit;text-decoration:none}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#040408}::-webkit-scrollbar-thumb{background:rgba(124,92,246,0.3);border-radius:3px}::-webkit-scrollbar-thumb:hover{background:rgba(124,92,246,0.5)}
+
+body::after{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;
+background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:0.015}
+
+.grid-bg{position:fixed;inset:0;z-index:0;pointer-events:none;
+background-image:linear-gradient(rgba(124,92,246,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(124,92,246,0.02) 1px,transparent 1px);background-size:80px 80px;
+mask-image:radial-gradient(ellipse 60% 50% at 50% 25%,black 10%,transparent 65%);-webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 25%,black 10%,transparent 65%)}
+
+.mesh{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.mesh i{position:absolute;border-radius:50%;filter:blur(100px);opacity:0.04;animation:mf 20s ease-in-out infinite}
+.mesh i:nth-child(1){width:500px;height:500px;background:#7c5cf6;top:5%;right:10%}
+.mesh i:nth-child(2){width:350px;height:350px;background:rgba(99,102,241,0.8);bottom:20%;left:5%;animation-delay:-10s}
+@keyframes mf{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-40px) scale(1.1)}}
+
+.starfield{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;background:#fff;border-radius:50%;opacity:0;animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:0.18;transform:scale(1)}50%{opacity:0.85;transform:scale(1.4)}}
+
+.aurora-top{position:fixed;top:0;left:0;right:0;height:60vh;z-index:0;pointer-events:none;
+background:linear-gradient(180deg,rgba(124,92,246,0.055) 0%,rgba(124,92,246,0.02) 40%,transparent 100%);
+animation:aurora-drift 28s ease-in-out infinite}
+@keyframes aurora-drift{0%,100%{opacity:0.75;transform:translateY(0)}50%{opacity:1;transform:translateY(12px)}}
+
+.sky-moon{position:fixed;top:14%;right:6%;width:110px;height:110px;border-radius:50%;
+background:radial-gradient(circle at 30% 28%,#f0e4c8,#a89678 55%,#5a4a30);
+box-shadow:0 0 90px rgba(240,228,200,0.18),inset -22px -10px 45px rgba(0,0,0,0.55);
+z-index:0;pointer-events:none;opacity:0.32;animation:moon-float 30s ease-in-out infinite}
+.sky-moon::after{content:'';position:absolute;top:22%;left:24%;width:12px;height:8px;border-radius:50%;background:rgba(80,60,40,0.35)}
+.sky-moon::before{content:'';position:absolute;top:55%;left:60%;width:7px;height:5px;border-radius:50%;background:rgba(80,60,40,0.3)}
+@keyframes moon-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+.horizon-glow{position:fixed;bottom:0;left:0;right:0;height:32vh;z-index:0;pointer-events:none;
+background:radial-gradient(ellipse at 50% 100%,rgba(255,183,110,0.055) 0%,transparent 65%)}
+
+#glow{position:fixed;width:400px;height:400px;border-radius:50%;
+background:radial-gradient(circle,rgba(124,92,246,0.10) 0%,transparent 60%);
+pointer-events:none;z-index:1;transform:translate(-50%,-50%);transition:left 0.08s,top 0.08s;display:none}
+@media(hover:hover)and(pointer:fine){#glow{display:block}}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;
+padding:22px 56px;background:rgba(4,4,8,0.9);backdrop-filter:blur(24px) saturate(1.5);
+border-bottom:1px solid rgba(124,92,246,0.12)}
+.n-brand{display:flex;align-items:center;gap:11px}
+.n-brand img{width:34px;height:34px}
+.n-brand span{font-family:'Plus Jakarta Sans';font-size:20px;font-weight:800;letter-spacing:0.5px;color:#ccc8e0}
+.n-right{display:flex;align-items:center;gap:34px}
+.n-link{font-size:14px;color:#9691af;transition:color 0.2s;letter-spacing:0.03em;font-weight:500}
+.n-link:hover{color:#ccc8e0}
+.n-link.active{color:#7c5cf6}
+.n-cta{padding:11px 24px;background:#7c5cf6;color:#fff;font-family:'Plus Jakarta Sans';font-size:13.5px;font-weight:700;
+border-radius:8px;transition:all 0.3s;letter-spacing:0.02em}
+.n-cta:hover{background:#6d4de0;transform:translateY(-1px);box-shadow:0 4px 18px rgba(124,92,246,0.25)}
+
+.ham{display:none;width:36px;height:36px;background:none;border:1px solid rgba(124,92,246,0.12);border-radius:8px;cursor:pointer;padding:8px 7px;position:relative;z-index:202}
+.ham span{display:block;width:100%;height:1.5px;background:#ccc8e0;transition:all 0.3s;margin-bottom:5px}
+.ham span:last-child{margin-bottom:0}
+.ham.open span:nth-child(1){transform:rotate(45deg) translate(4px,5px)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-5px)}
+.mob-menu{position:fixed;inset:0;background:rgba(4,4,8,0.97);backdrop-filter:blur(30px);z-index:199;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:opacity 0.35s}
+.mob-menu.open{opacity:1;pointer-events:auto}
+.mob-menu a{font-family:'Plus Jakarta Sans';font-size:22px;font-weight:600;color:#ccc8e0}
+.mob-menu .mm-cta{padding:14px 32px;background:#7c5cf6;color:#fff;border-radius:10px;font-size:16px;font-weight:700}
+
+.hero-legal{padding:180px 24px 60px;text-align:center;position:relative;z-index:2;max-width:880px;margin:0 auto}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;
+border:1px solid rgba(124,92,246,0.20);border-radius:100px;margin-bottom:28px;
+font-family:'JetBrains Mono';font-size:11px;color:#7c5cf6;letter-spacing:0.1em;text-transform:uppercase;
+background:rgba(124,92,246,0.08)}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:#7c5cf6;box-shadow:0 0 10px #7c5cf6;animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(1.4)}}
+h1.hero-title{font-family:'Plus Jakarta Sans';font-size:clamp(44px,7vw,72px);font-weight:800;line-height:1.02;letter-spacing:-0.035em;color:#ffffff;margin-bottom:18px}
+h1.hero-title em{font-style:italic;font-weight:800;background:linear-gradient(120deg,#a78bfa 0%,#7c5cf6 45%,#a78bfa 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-family:'Inter';font-size:16px;color:#87829d;line-height:1.65;font-weight:300;max-width:600px;margin:0 auto}
+.hero-meta{display:inline-flex;align-items:center;gap:16px;margin-top:32px;padding:10px 20px;border-radius:100px;
+background:rgba(124,92,246,0.06);border:1px solid rgba(124,92,246,0.14);
+font-family:'JetBrains Mono';font-size:11px;color:#9691af;letter-spacing:0.06em}
+.hero-meta strong{color:#c4b1ff;font-weight:500}
+.hero-meta i{width:1px;height:14px;background:rgba(124,92,246,0.3);display:inline-block}
+
+.summary{max-width:1000px;margin:60px auto 20px;padding:0 24px;position:relative;z-index:2}
+.summary-title{font-family:'JetBrains Mono';font-size:11px;color:#7c5cf6;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:20px;text-align:center;display:flex;align-items:center;justify-content:center;gap:10px}
+.summary-title::before,.summary-title::after{content:'';width:32px;height:1px;background:linear-gradient(90deg,transparent,rgba(124,92,246,0.4))}
+.summary-title::after{background:linear-gradient(90deg,rgba(124,92,246,0.4),transparent)}
+.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:60px}
+.summary-card{padding:22px 20px;border:1px solid rgba(124,92,246,0.16);border-radius:14px;
+background:linear-gradient(145deg,rgba(20,14,37,0.5),rgba(10,9,22,0.35));transition:all 0.3s}
+.summary-card:hover{border-color:rgba(124,92,246,0.4);transform:translateY(-2px);box-shadow:0 12px 30px rgba(124,92,246,0.12)}
+.summary-icon{width:36px;height:36px;border-radius:10px;background:rgba(124,92,246,0.14);
+display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:#c4b1ff}
+.summary-h{font-family:'Plus Jakarta Sans';font-size:14px;font-weight:700;color:#ccc8e0;margin-bottom:6px;line-height:1.3}
+.summary-d{font-family:'Inter';font-size:12.5px;color:#87829d;line-height:1.55;font-weight:300}
+
+.content{max-width:820px;margin:0 auto;padding:0 24px 80px;position:relative;z-index:2}
+.section{margin-bottom:44px;padding:32px;border:1px solid rgba(124,92,246,0.10);border-radius:16px;
+background:linear-gradient(145deg,rgba(20,14,37,0.4),rgba(10,9,22,0.25))}
+.section-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.section-num{width:34px;height:34px;border-radius:9px;
+background:linear-gradient(135deg,rgba(124,92,246,0.2),rgba(124,92,246,0.06));
+border:1px solid rgba(124,92,246,0.28);display:flex;align-items:center;justify-content:center;flex-shrink:0;
+font-family:'JetBrains Mono';font-size:12px;font-weight:600;color:#c4b1ff}
+.section-title{font-family:'Plus Jakarta Sans';font-size:20px;font-weight:700;color:#ccc8e0;letter-spacing:-0.015em;line-height:1.25}
+.section-body{color:#9691af;font-size:15px;line-height:1.72}
+.section-body p{margin-bottom:14px}
+.section-body p:last-child{margin-bottom:0}
+.section-body a{color:#a78bfa;border-bottom:1px solid rgba(167,139,250,0.35);transition:border-color 0.2s}
+.section-body a:hover{border-color:#a78bfa}
+.section-body strong{color:#ccc8e0;font-weight:600}
+
+.callout{padding:20px 22px;margin:20px 0;border-radius:12px;
+background:linear-gradient(145deg,rgba(124,92,246,0.10),rgba(124,92,246,0.03));
+border:1px solid rgba(124,92,246,0.28)}
+.callout-lbl{display:inline-block;padding:3px 10px;border-radius:100px;
+background:rgba(124,92,246,0.18);color:#c4b1ff;font-family:'JetBrains Mono';font-size:9px;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;font-weight:500}
+.callout .grievance-row{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-family:'JetBrains Mono';font-size:12.5px;line-height:1.6;margin-top:10px}
+.callout .grievance-row .k{color:#7c5cf6;font-weight:500;letter-spacing:0.04em}
+.callout .grievance-row .v{color:#ccc8e0}
+
+.pricing-highlight{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.pricing-pill{padding:14px 18px;border-radius:12px;
+background:linear-gradient(145deg,rgba(124,92,246,0.10),rgba(124,92,246,0.02));
+border:1px solid rgba(124,92,246,0.22);text-align:center}
+.pricing-pill .p-price{font-family:'Plus Jakarta Sans';font-size:22px;font-weight:800;color:#fff;letter-spacing:-0.02em}
+.pricing-pill .p-period{font-family:'JetBrains Mono';font-size:10px;color:#7c5cf6;letter-spacing:0.1em;text-transform:uppercase;margin-top:2px}
+@media(max-width:520px){.pricing-highlight{grid-template-columns:1fr}}
+
+.contact-cta{max-width:820px;margin:0 auto 80px;padding:0 24px;position:relative;z-index:2}
+.contact-cta-box{padding:44px 32px;text-align:center;border-radius:20px;
+background:linear-gradient(145deg,rgba(124,92,246,0.10),rgba(124,92,246,0.02));
+border:1px solid rgba(124,92,246,0.25);position:relative;overflow:hidden}
+.contact-cta-box::before{content:'';position:absolute;top:-50%;left:-50%;right:-50%;bottom:-50%;
+background:radial-gradient(circle at 50% 50%,rgba(124,92,246,0.15),transparent 60%);opacity:0.6;pointer-events:none}
+.contact-cta-box h3{font-family:'Plus Jakarta Sans';font-size:26px;font-weight:800;color:#fff;margin-bottom:10px;letter-spacing:-0.02em}
+.contact-cta-box p{color:#9691af;font-size:14.5px;margin-bottom:22px;font-weight:300}
+.contact-cta-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:#7c5cf6;color:#fff;
+font-family:'Plus Jakarta Sans';font-size:14.5px;font-weight:700;border-radius:10px;transition:all 0.3s;position:relative;z-index:1}
+.contact-cta-btn:hover{background:#6d4de0;transform:translateY(-1px);box-shadow:0 8px 24px rgba(124,92,246,0.3)}
+
+.footer-w{padding:34px 56px 30px;background:linear-gradient(180deg,rgba(68,33,46,.17),rgba(7,7,16,.30));
+border-top:1px solid rgba(124,92,246,0.12);position:relative;z-index:2;margin-top:60px}
+.footer-top{max-width:1200px;margin:0 auto 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:48px}
+.footer-brand-block{max-width:360px}
+.f-brand{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.f-brand img{width:32px;height:32px}
+.f-brand span{font-family:'Plus Jakarta Sans';font-size:19px;font-weight:800;color:#ccc8e0}
+.footer-tagline{font-size:14px;color:#9691af;line-height:1.7;font-weight:300}
+.footer-cols{display:flex;gap:64px;flex-wrap:wrap}
+.footer-col h4{font-family:'JetBrains Mono';font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#7c5cf6;margin-bottom:16px;font-weight:500}
+.footer-col a{display:block;font-size:13.5px;color:#9691af;margin-bottom:12px;transition:color 0.2s}
+.footer-col a:hover{color:#ccc8e0}
+.footer-bottom{max-width:1200px;margin:0 auto;padding-top:26px;border-top:1px solid rgba(124,92,246,0.1);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.f-copy{font-family:'JetBrains Mono';font-size:11px;color:#87829d;letter-spacing:0.06em}
+.footer-social{display:flex;gap:12px}
+.footer-social a{width:34px;height:34px;border-radius:8px;border:1px solid rgba(124,92,246,0.16);
+display:flex;align-items:center;justify-content:center;color:#87829d;transition:all 0.2s}
+.footer-social a:hover{color:#7c5cf6;border-color:#7c5cf6;background:rgba(124,92,246,0.1);transform:translateY(-2px)}
+
+@media(max-width:900px){.summary-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){
+  nav{padding:14px 20px}.n-link,.n-cta{display:none}.ham{display:block}
+  .hero-legal{padding:140px 20px 40px}
+  .content{padding:0 20px 60px}
+  .section{padding:24px 20px}
+  .section-title{font-size:18px}
+  .contact-cta-box{padding:32px 22px}
+  .footer-w{padding:40px 20px 24px}
+  .footer-top{flex-direction:column;gap:32px}
+  .footer-cols{gap:32px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .sky-moon{width:80px;height:80px;opacity:0.25}
+}
+@media(max-width:520px){.summary-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
-  <div class="logo">skar</div>
-  <div class="tagline">lock in.</div>
+<div class="grid-bg"></div>
+<div class="aurora-top"></div>
+<div class="starfield" id="starfield"></div>
+<div class="sky-moon"></div>
+<div class="mesh"><i></i><i></i></div>
+<div class="horizon-glow"></div>
+<div id="glow"></div>
 
-  <h1>Terms of Service</h1>
-  <div class="updated">Last updated: June 2026</div>
+<nav>
+  <a href="https://skarapp.com" class="n-brand">
+    <img src="Skar Logo without text.png" alt="Skar">
+    <span>skar</span>
+  </a>
+  <div class="n-right">
+    <a href="https://skarapp.com" class="n-link">Home</a>
+    <a href="https://skarapp.com/#features" class="n-link">Features</a>
+    <a href="https://skarapp.com/analyze.html" class="n-link">Sleep Test</a>
+    <a href="https://skarapp.com/about.html" class="n-link">About</a>
+    <a href="terms.html" class="n-link active">Terms</a>
+    <a href="https://skarapp.com/#waitlist" class="n-cta">Join waitlist</a>
+  </div>
+  <button class="ham" id="hamBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
-  <div class="divider"></div>
+<div class="mob-menu" id="mobMenu">
+  <a href="https://skarapp.com">Home</a>
+  <a href="https://skarapp.com/analyze.html">Sleep Test</a>
+  <a href="https://skarapp.com/about.html">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="https://skarapp.com/#waitlist" class="mm-cta">Join waitlist</a>
+</div>
 
-  <h2>1. Acceptance of Terms</h2>
-  <p>By downloading, accessing, or using the Skar mobile application ("App"), you agree to be bound by these Terms of Service. If you do not agree, do not use the App. Skar reserves the right to modify these Terms at any time. Continued use after changes constitutes acceptance.</p>
+<header class="hero-legal">
+  <div class="hero-tag"><span class="hero-tag-dot"></span>Legal &middot; Terms</div>
+  <h1 class="hero-title">Fair rules. <em>No gotchas.</em></h1>
+  <p class="hero-sub">The rules for using Skar, written like we would actually explain them to a friend. Short paragraphs. No footnotes. No fine print.</p>
+  <div class="hero-meta">
+    <span>Last updated <strong>June 2026</strong></span>
+    <i></i>
+    <span>Governed by <strong>Laws of India</strong></span>
+  </div>
+</header>
 
-  <h2>2. Eligibility</h2>
-  <p>You must be at least 13 years old to use Skar. If you are between 13 and 18, you must have parental or guardian consent. By using the App, you represent that you meet these requirements.</p>
+<section class="summary">
+  <div class="summary-title">The short version</div>
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="summary-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg></div>
+      <div class="summary-h">13 to use, 18+ or consent</div>
+      <div class="summary-d">Under 13 not allowed. 13&ndash;18 needs parental consent.</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.84 4.6a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.07a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.85a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="summary-h">Skar is not medical advice</div>
+      <div class="summary-d">Do not use it to replace a doctor or therapist.</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20M6 15h2M12 15h4"/></svg></div>
+      <div class="summary-h">Free tier + Pro at &#8377;99/mo</div>
+      <div class="summary-d">7-day Pro trial. Cancel any time from Google Play.</div>
+    </div>
+    <div class="summary-card">
+      <div class="summary-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg></div>
+      <div class="summary-h">Delete your account any time</div>
+      <div class="summary-d">Data is fully removed within 30 days. No dark patterns.</div>
+    </div>
+  </div>
+</section>
 
-  <h2>3. Account Registration</h2>
-  <p>You may register using email, phone number, or Google Sign-In. You are responsible for maintaining the confidentiality of your account credentials. You agree to provide accurate and complete information. One account per person. Skar reserves the right to suspend or terminate accounts that violate these Terms.</p>
+<main class="content">
 
-  <h2>4. Username Policy</h2>
-  <p>Usernames must be unique and between 3–20 characters, containing only letters, numbers, underscores, and periods. Skar reserves the right to remove or reassign usernames that are offensive, misleading, or impersonate others.</p>
-
-  <h2>5. The Oath</h2>
-  <p>The oath you sign during onboarding is a personal commitment and is not a legally binding contract. Skar uses your oath text for personalisation purposes only. You may edit your oath at any time.</p>
-
-  <h2>6. Sleep Tracking and Data</h2>
-  <p>Skar tracks your sleep lock-in times, wake-up times, and calculates sleep scores. Skar is not a medical device and does not provide medical advice. Do not use Skar as a substitute for professional medical care.</p>
-
-  <h2>7. App Blocking Feature</h2>
-  <p>Skar's lockdown feature uses Android Accessibility Services to restrict access to selected apps during your designated sleep window. You control which apps are blocked and can bypass the lockdown at any time. Skar does not access the content of other apps — it only detects whether they are opened during lockdown. By enabling this feature, you grant Skar the necessary Accessibility Service permissions.</p>
-
-  <h2>8. Subscriptions and Payments</h2>
-  <p>Skar offers a free tier and a paid Pro subscription. Free users receive a 7-day trial of Pro features. Pro subscriptions are billed monthly (₹99/month) or annually (₹1,000/year). Payments are processed through Google Play Store. You may cancel at any time. Refunds are subject to Google Play's refund policy.</p>
-
-  <h2>9. Community Features</h2>
-  <p>You agree not to post content that is offensive, harassing, threatening, or illegal. Skar reserves the right to remove content and suspend accounts that violate community standards. Confessions are anonymous but tied to your account for moderation purposes.</p>
-
-  <h2>10. Intellectual Property</h2>
-  <p>All content, design, and code in the Skar App is the property of Skar and its creators. You may not copy, modify, distribute, or reverse-engineer any part of the App.</p>
-
-  <h2>11. Limitation of Liability</h2>
-  <p>Skar is provided "as is" without warranties of any kind. Skar is not responsible for any damages arising from your use of the App, including missed alarms, data loss, or device impacts. Skar's total liability shall not exceed the amount you paid in the 12 months preceding any claim.</p>
-
-  <h2>12. Termination</h2>
-  <p>You may delete your account at any time from Settings. Skar may terminate or suspend your account for violations of these Terms. Upon termination, your data will be permanently deleted within 30 days.</p>
-
-  <h2>13. Governing Law</h2>
-  <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in Mumbai, Maharashtra.</p>
-
-  <h2>14. Grievance Officer</h2>
-  <div class="highlight-box">
-    <h3>Contact our Grievance Officer</h3>
-    <p>In accordance with the Information Technology Act 2000 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules 2021:</p>
-    <p>
-      <strong style="color: #F5F5F7;">Name:</strong> Sanskar Bohara<br>
-      <strong style="color: #F5F5F7;">Designation:</strong> Grievance Officer<br>
-      <strong style="color: #F5F5F7;">Email:</strong> <a href="mailto:support@skar.app">support@skar.app</a><br>
-      <strong style="color: #F5F5F7;">Response time:</strong> Within 30 days of receiving a complaint
-    </p>
+  <div class="section">
+    <div class="section-head"><div class="section-num">01</div><div class="section-title">Acceptance of Terms</div></div>
+    <div class="section-body">
+      <p>By downloading, accessing, or using the Skar mobile application ("App"), you agree to be bound by these Terms of Service. If you do not agree, do not use the App. Skar reserves the right to modify these Terms at any time. Continued use after changes constitutes acceptance.</p>
+    </div>
   </div>
 
-  <h2>15. Contact</h2>
-  <p>For questions about these Terms, contact us at <a href="mailto:support@skar.app">support@skar.app</a></p>
+  <div class="section">
+    <div class="section-head"><div class="section-num">02</div><div class="section-title">Eligibility</div></div>
+    <div class="section-body">
+      <p>You must be at least 13 years old to use Skar. If you are between 13 and 18, you must have parental or guardian consent. By using the App, you represent that you meet these requirements.</p>
+    </div>
+  </div>
 
-  <div class="footer">© 2026 Skar · Made with 🔒 in India</div>
+  <div class="section">
+    <div class="section-head"><div class="section-num">03</div><div class="section-title">Account Registration</div></div>
+    <div class="section-body">
+      <p>You may register using email, phone number, or Google Sign-In. You are responsible for maintaining the confidentiality of your account credentials. You agree to provide accurate and complete information. One account per person. Skar reserves the right to suspend or terminate accounts that violate these Terms.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">04</div><div class="section-title">Username Policy</div></div>
+    <div class="section-body">
+      <p>Usernames must be unique and between 3&ndash;20 characters, containing only letters, numbers, underscores, and periods. Skar reserves the right to remove or reassign usernames that are offensive, misleading, or impersonate others.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">05</div><div class="section-title">The Oath</div></div>
+    <div class="section-body">
+      <p>The oath you sign during onboarding is a personal commitment and is not a legally binding contract. Skar uses your oath text for personalisation purposes only. You may edit your oath at any time.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">06</div><div class="section-title">Sleep Tracking and Data</div></div>
+    <div class="section-body">
+      <p>Skar tracks your sleep lock-in times, wake-up times, and calculates sleep scores. <strong>Skar is not a medical device and does not provide medical advice.</strong> Do not use Skar as a substitute for professional medical care.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">07</div><div class="section-title">App Blocking Feature</div></div>
+    <div class="section-body">
+      <p>Skar's lockdown feature uses Android Accessibility Services to restrict access to selected apps during your designated sleep window. You control which apps are blocked and can bypass the lockdown at any time. Skar does not access the content of other apps &mdash; it only detects whether they are opened during lockdown. By enabling this feature, you grant Skar the necessary Accessibility Service permissions.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">08</div><div class="section-title">Subscriptions and Payments</div></div>
+    <div class="section-body">
+      <p>Skar offers a free tier and a paid Pro subscription. Free users receive a 7-day trial of Pro features.</p>
+      <div class="pricing-highlight">
+        <div class="pricing-pill">
+          <div class="p-price">&#8377;99</div>
+          <div class="p-period">Per month</div>
+        </div>
+        <div class="pricing-pill">
+          <div class="p-price">&#8377;1,000</div>
+          <div class="p-period">Per year</div>
+        </div>
+      </div>
+      <p>Payments are processed through Google Play Store. You may cancel at any time. Refunds are subject to Google Play's refund policy.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">09</div><div class="section-title">Community Features</div></div>
+    <div class="section-body">
+      <p>You agree not to post content that is offensive, harassing, threatening, or illegal. Skar reserves the right to remove content and suspend accounts that violate community standards. Confessions are anonymous but tied to your account for moderation purposes.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">10</div><div class="section-title">Intellectual Property</div></div>
+    <div class="section-body">
+      <p>All content, design, and code in the Skar App is the property of Skar and its creators. You may not copy, modify, distribute, or reverse-engineer any part of the App.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">11</div><div class="section-title">Limitation of Liability</div></div>
+    <div class="section-body">
+      <p>Skar is provided "as is" without warranties of any kind. Skar is not responsible for any damages arising from your use of the App, including missed alarms, data loss, or device impacts. Skar's total liability shall not exceed the amount you paid in the 12 months preceding any claim.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">12</div><div class="section-title">Termination</div></div>
+    <div class="section-body">
+      <p>You may delete your account at any time from Settings. Skar may terminate or suspend your account for violations of these Terms. Upon termination, your data will be permanently deleted within 30 days.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">13</div><div class="section-title">Governing Law</div></div>
+    <div class="section-body">
+      <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in <strong>Mumbai, Maharashtra</strong>.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-head"><div class="section-num">14</div><div class="section-title">Grievance Officer</div></div>
+    <div class="section-body">
+      <p>In accordance with the Information Technology Act 2000 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules 2021:</p>
+      <div class="callout">
+        <div class="callout-lbl">Grievance Officer</div>
+        <div class="grievance-row">
+          <span class="k">Name</span><span class="v">Sanskar Bohara</span>
+          <span class="k">Designation</span><span class="v">Grievance Officer</span>
+          <span class="k">Email</span><span class="v"><a href="mailto:support@skar.app">support@skar.app</a></span>
+          <span class="k">Response</span><span class="v">Within 30 days of receiving a complaint</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<div class="contact-cta">
+  <div class="contact-cta-box">
+    <h3>Questions about these terms?</h3>
+    <p>Reach out any time. We respond in plain language.</p>
+    <a href="mailto:support@skar.app" class="contact-cta-btn">support@skar.app <span>&rarr;</span></a>
+  </div>
+</div>
+
+<div class="footer-w">
+  <div class="footer-top">
+    <div class="footer-brand-block">
+      <div class="f-brand"><img src="Skar Logo without text.png" alt="Skar"><span>skar</span></div>
+      <p class="footer-tagline">Your phone wins every night. We are building the fix.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="https://skarapp.com/#features">Features</a>
+        <a href="https://skarapp.com/analyze.html">Sleep Test</a>
+        <a href="https://skarapp.com/#waitlist">Join Waitlist</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="https://skarapp.com/about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="https://instagram.com/skar.app" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="f-copy">&copy; 2026 skar &middot; Made in India</div>
+    <div class="footer-social">
+      <a href="https://instagram.com/skar.app" target="_blank" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){var f=document.getElementById('starfield');if(!f)return;
+var c=window.innerWidth<768?40:75,h='';
+for(var i=0;i<c;i++){h+='<i class="star" style="left:'+(Math.random()*100)+'%;top:'+(Math.random()*100)+'%;width:'+(Math.random()*1.5+0.5)+'px;height:'+(Math.random()*1.5+0.5)+'px;animation-delay:'+(Math.random()*5)+'s;animation-duration:'+(3+Math.random()*4)+'s"></i>';}
+f.innerHTML=h;})();
+
+(function(){var g=document.getElementById('glow');
+if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+document.addEventListener('mousemove',function(e){g.style.left=e.clientX+'px';g.style.top=e.clientY+'px';},{passive:true});}})();
+
+(function(){var b=document.getElementById('hamBtn'),m=document.getElementById('mobMenu');if(!b||!m)return;
+b.addEventListener('click',function(){b.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('open');m.classList.remove('open');document.body.style.overflow='';});});})();
+</script>
 
 </body>
 </html>
